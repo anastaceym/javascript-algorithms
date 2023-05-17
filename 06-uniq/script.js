@@ -7,8 +7,10 @@
  * 
 */
 
+
 function uniq(arr) {
-    // Напишите код здесь
+    const uniqNumbers = [... new Set(arr)];
+    return uniqNumbers;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:

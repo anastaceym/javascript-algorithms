@@ -8,9 +8,17 @@
  * ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'].
  *
 */
-
+const vowel = ['а', 'я', 'о', 'ё', 'у', 'ю', 'ы', 'и', 'э', 'е'];
 function findVowels(str) {
-    // Напишите код здесь
+    str = str.toLowerCase();
+    let vowelsSearch = 0;
+
+    str.split('').forEach((item) => {
+        if (vowel.indexOf(item) !== -1) {
+            vowelsSearch++;
+        }
+    })
+    return vowelsSearch;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
